@@ -1,4 +1,5 @@
 package com.read.files;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.HashMap;
@@ -14,11 +15,10 @@ public class ReadCSV {
 
 		HashMap<String, Integer> obj = new HashMap<String, Integer>();
 
-		File file = new File("/home//mallari/Match.csv");
+		File file = new File("/home/mallari/Match.csv");
 		Scanner scan = new Scanner(file);
 
 		while (scan.hasNext()) {
-
 			String s = scan.nextLine();
 			String[] str = s.split(",");
 
